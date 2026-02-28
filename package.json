@@ -1,20 +1,35 @@
 {
- "name": "pousada-pedra-furada",
- "version": "1.0.0",
- "description": "Aplicação web SPA desenvolvida em **Next.js**, com foco em **CI/CD**, **TDD** e **boas práticas de versionamento**.",
- "main": "next.config.js",
- "scripts": {
- "test": "echo \"Error: no test specified\" && exit 1"
- },
- "keywords": [],
- "author": "Luiz Henrique",
- "license": "MIT",
- "repository": {
- "type": "git",
- "url": "git+https://github.com/LuizHBF/pousada-pedra-furada.git"
- },
- "bugs": {
- "url": "https://github.com/LuizHBF/pousada-pedra-furada/issues"
- },
- "homepage": "https://github.com/LuizHBF/pousada-pedra-furada#readme"
-} 
+  "name": "pousada-pedra-furada",
+  "version": "1.0.0",
+  "description": "Aplicação web SPA desenvolvida em **Next.js**, com foco em **CI/CD**, **TDD** e **boas práticas de versionamento**.",
+  "main": "next.config.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "Luiz Henrique",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuizHBF/pousada-pedra-furada.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LuizHBF/pousada-pedra-furada/issues"
+  },
+  "homepage": "https://github.com/LuizHBF/pousada-pedra-furada#readme",
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
