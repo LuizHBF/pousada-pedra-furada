@@ -1,14 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
 export default function Layout({ children }) {
     return (
-        <div className="layout">
+        <div>
             <Header />
-            <main style={{ padding: "1rem" }}>
-                {children}
-            </main>
-            <Footer />
+            <main style={{ padding: "1rem" }}>{children}</main>
+            <footer>
+                <small>© 2025 Pousada Pedra Furada</small>
+            </footer>
         </div>
     );
 }
