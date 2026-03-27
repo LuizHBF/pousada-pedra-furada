@@ -1,9 +1,11 @@
+// src/pages/TarefasPage.jsx
 import React, { useState } from "react";
+
 export default function TarefasPage() {
     const [tarefas, setTarefas] = useState([
-        { id: 1, nome: "Arrumar quarto 101", status: "Atribuída" },
-        { id: 2, nome: "Lavar pátio", status: "Concluída" },
+        { id: 1, nome: "Arrumar quarto 101", status: "Atribuída" }, { id: 2, nome: "Lavar pátio", status: "Concluída" },
     ]);
+    
     const atualizarStatus = (id) => {
         setTarefas((prev) =>
             prev.map((t) =>
@@ -21,6 +23,7 @@ export default function TarefasPage() {
             )
         );
     };
+    
     return (
         <section>
             <h2>Tarefas do Dia</h2>
@@ -28,10 +31,9 @@ export default function TarefasPage() {
                 {tarefas.map((t) => (
                     <li key={t.id}>
                         {t.nome} — <strong>{t.status}</strong>{" "}
-                        <button onClick={() => atualizarStatus(t.id)}>Atualizar</button>
-                    </li>
+                        <button onClick={() => atualizarStatus(t.id)}>Atualizar</button>  </li>
                 ))}
             </ul>
         </section>
     );
-} 
+}
